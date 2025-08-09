@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>PayDaily</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="text" href="img.html">
+   
+   <link rel="icon" type="image/png" href="images\PD.jpg">
+
+ 
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images\PDi.jpeg" height="80" width="80"><center>PayDaily</center>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><div class="dropdown">
+    <button class="dropbtn">Services 
+      ▾
+    </button>
+         <div class="dropdown-content">
+      <a href="#">UPI Intent</a>
+      <a href="#">Static QR</a>
+      <a href="#">Payout API</a>
+    </div>
+      
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+
+
+  
+   <div class="section">
+  <div class="image-box">
+    <img src="images\StockCake1.jpg" alt="Example">
+  </div>
+  <div class="text-box">
+    <h2>Secure Payment Gateway</h2>
+    <p>Fast, safe, and reliable online transactions for your business. Seamlessly accept payments from your customers around the world.</p>
+  </div>
+</div>
+    
+  </div>
+
+  
+<div>
+  <br>
+  <br>
+  <h1 align="center" >Payment Methods Offered</h1>
+  <p>
+  <b>  PayDaily</b> offers a comprehensive and secure range of payment channels to simplify making payments or receiving them. Whether you’re a customer wanting to pay a bill quickly and safely or a merchant wanting to offer your clients the fastest and most convenient way to make payments, PayDaily is the solution.
+PayDaily is PCI DSS Level 1 compliant and safely stores saved cards for maximum security.
+  </p>
+</div>
+
+ <div class="payment-container">
+    <div class="payment-option">
+      <img src="images\bank.png" alt="Bank">
+      <p><b>Bank</b></p>
+    </div>
+    <div class="payment-option">
+      <img src="images\card.png" alt="Card">
+      <p><b>Card</b></p>
+    </div>
+    <div class="payment-option">
+      <img src="images\wallet.jpg" alt="Wallet">
+      <p><b>Wallet</b></p>
+    </div>
+    <div class="payment-option">
+      <img src="images\UPI.jpg" alt="UPI">
+      <p><b>UPI</b></p>
+    </div>
+    <div class="payment-option">
+      <img src="images\QR.png" alt="QR Code">
+      <p><b>QR Code</b></p>
+    </div>
+  </div>
+
+
+
+  <div>
+  <br>
+  <br>
+  <h1 align="center" >Sucess Story</h1>
+  <p>
+   <b> PayDaily</b> offers a comprehensive and secure range of payment channels to simplify making payments or receiving them. Whether you’re a customer wanting to pay a bill quickly and safely or a merchant wanting to offer your clients the fastest and most convenient way to make payments, PayDaily is the solution.
+PayDaily is PCI DSS Level 1 compliant and safely stores saved cards for maximum security.
+  </p>
+</div>
+  
+<!-- countoun the number-->  
+<div class="counter-container">
+  <div class="counter-box">
+    <div class="counter-number" data-target="100">0</div>
+    <div class="counter-label">Happy Merchant</div>
+  </div>
+  <div class="counter-box">
+    <div class="counter-number" data-target="12000">0</div>
+    <div class="counter-label">Total Users</div>
+  </div>
+  <div class="counter-box">
+    <div class="counter-number" data-target="10">0</div>
+    <div class="counter-label">Payment Methods</div>
+  </div>
+</div>
+
+<script>
+  const counters = document.querySelectorAll('.counter-number');
+
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const current = +counter.innerText;
+      const increment = target / 200;
+
+      if (current < target) {
+        counter.innerText = Math.ceil(current + increment);
+        setTimeout(updateCount, 10);
+      } else {
+        counter.innerText = target.toLocaleString();
+      }
+    };
+
+    updateCount();
+  });
+</script>
+
+
+<iframe src="pricing.html" style="width:100%;height:600px;border:none;"></iframe>
+
+
+ <div class="section">
+  <div class="image-box">
+    <img src="images\StockCake.jpg" alt="Example">
+  </div>
+  <div class="text-box">
+    <h2>Secure Payment Gateway</h2>
+    <p>Fast, safe, and reliable online transactions for your business. Seamlessly accept payments from your customers around the world.</p>
+  </div>
+</div>
+    
+  </div>
+
+
+ 
+
+  <!-- Footer page code-->
+<footer>
+  <div class="footer-container">
+    
+    <div class="footer-column">
+      <h3>
+         <img src="images\PDi.jpeg" height="80" width="80">
+         About Us
+      </h3>
+      <p1>We provide secure and reliable payment gateway and payout solutions for e-commerce, gaming, and business platforms.</p1>
+    </div>
+
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+         <li><a href="index.html">Home</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="about.html">About US</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <ul>
+        <li>Email: support@yourdomain.com</li>
+        <li>Phone: +91 98765 43210</li>
+        <li>Address: 123 Business Street, Chennai, India</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Follow Us</h3>
+      <div class="footer-social">
+        <ul>
+       <li> <a href="#"><i class="fab fa-facebook-f">facebook</i></a></li>
+       <li> <a href="#"><i class="fab fa-twitter">Twitter</i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in">linkedin</i></a></li>
+       <li> <a href="#"><i class="fab fa-instagram">instagram</i></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 YourCompanyName. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>

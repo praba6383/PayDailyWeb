@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images\PD.jpg">
+
+  <title>Contact</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+      background: #fff;
+      margin-top: 50px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .contact-info, .contact-form {
+      flex: 1;
+      min-width: 300px;
+      margin: 20px;
+    }
+
+    .contact-info h3 {
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    .contact-info p {
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    form button {
+      padding: 12px 25px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .contact-wrapper {
+        flex-direction: column;
+      }
+    }
+
+
+
+    /* footer page style*/
+
+     footer {
+      background-color: #222;
+      color: #f4f4f4;
+      padding: 40px 20px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-column {
+      flex: 1 1 250px;
+      margin: 20px 0;
+    }
+
+    .footer-column h3 {
+      color: #fff;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+      color: #bbb;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-column ul li a:hover {
+      color: #fff;
+    }
+
+    .footer-social a {
+      display: inline-block;
+      margin-right: 15px;
+      color: #bbb;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .footer-social a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #444;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    @media screen and (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <div class="contact-wrapper">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Get in touch</h3>
+        <p><strong>Company:</strong> PayDaily Solutions Pvt. Ltd.</p>
+        <p><strong>Email:</strong> support@PayDaily.com</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Address:</strong> 2nd Floor, Tech Park, Bangalore, cuddalore</p>
+        <p><strong>Support Hours:</strong> Mon - Sat, 9 AM - 6 PM</p>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+ <!-- Footer page code-->
+<footer>
+  <div class="footer-container">
+    
+    <div class="footer-column">
+      <h3>
+         <img src="images\PDi.jpeg" height="80" width="80">
+        About Us</h3>
+      <p1>We provide secure and reliable payment gateway and payout solutions for e-commerce, gaming, and business platforms.</p1>
+    </div>
+
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+         <li><a href="index.html">Home</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="about.html">About US</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <ul>
+        <li>Email: support@yourdomain.com</li>
+        <li>Phone: +91 98765 43210</li>
+        <li>Address: 123 Business Street, Chennai, India</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Follow Us</h3>
+      <div class="footer-social">
+        <ul>
+       <li> <a href="#"><i class="fab fa-facebook-f">facebook</i></a></li>
+       <li> <a href="#"><i class="fab fa-twitter">Twitter</i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in">linkedin</i></a></li>
+       <li> <a href="#"><i class="fab fa-instagram">instagram</i></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 YourCompanyName. All rights reserved.
+  </div>
+</footer>
+
+
+
+</body>
+</html>

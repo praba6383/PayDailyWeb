@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Footer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    footer {
+      background-color: #222;
+      color: #f4f4f4;
+      padding: 40px 20px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-column {
+      flex: 1 1 250px;
+      margin: 20px 0;
+    }
+
+    .footer-column h3 {
+      color: #fff;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+      color: #bbb;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-column ul li a:hover {
+      color: #fff;
+    }
+
+    .footer-social a {
+      display: inline-block;
+      margin-right: 15px;
+      color: #bbb;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .footer-social a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #444;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    @media screen and (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+  <!-- Font Awesome for social icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<footer>
+  <div class="footer-container">
+    
+    <div class="footer-column">
+      <h3>About Us</h3>
+      <p>We provide secure and reliable payment gateway and payout solutions for e-commerce, gaming, and business platforms.</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <ul>
+        <li>Email: support@yourdomain.com</li>
+        <li>Phone: +91 98765 43210</li>
+        <li>Address: 123 Business Street, Chennai, India</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Follow Us</h3>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 YourCompanyName. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
