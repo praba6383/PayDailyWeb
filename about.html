@@ -3,143 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="style.css">
-   <style>
-        body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f8f9fa;
-    color: #333;
-}
-
-header {
-    background: #316294;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-header p1 {
-    margin: 5px 0 0;
-    font-size: 1.1rem;
-}
-
-section {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-    background: white;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
-
-section h2 {
-    color: #0077b6;
-    margin-bottom: 10px;
-}
-
-ol, ul {
-    margin: 10px 0 0 20px;
-}
-
-footer {
-    background: #27292a;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-   </style>
+    <title>About Us - PayDaily</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>About Our Payment Gateway</h1>
-        <p1>Secure • Fast • Reliable</p1>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-credit-card"></i>
+                <span>PayDaily</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html#payin">PayIn API</a>
+                        <a href="index.html#payout">PayOut API</a>
+                        <a href="index.html#integration">Integration</a>
+                    </div>
+                </li>
+                <li><a href="index.html#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <section class="about">
-        <h2>Introduction</h2>
-        <p1>
-            Our payment gateway enables businesses and individuals to send and receive payments online securely.
-            We provide support for UPI, Credit/Debit Cards, Net Banking, and Wallets, ensuring a smooth transaction process.
-        </p1>
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>About PayDaily</h1>
+            <p>Empowering businesses with secure, reliable, and innovative payment solutions</p>
+        </div>
     </section>
 
-    <section class="how-to-use">
-        <h2>How to Use</h2>
-        <ol>
-            <li>Sign up for an account and complete verification.</li>
-            <li>Integrate our payment API into your website or mobile app.</li>
-            <li>Start accepting payments instantly from customers worldwide.</li>
-        </ol>
+    <!-- Company Story -->
+    <section class="company-story">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2020, PayDaily emerged from a simple vision: to make digital payments accessible, secure, and seamless for businesses of all sizes. We recognized the growing need for reliable payment infrastructure in India's rapidly digitizing economy.</p>
+                    <p>Today, we serve thousands of merchants across various industries, processing millions of transactions monthly with industry-leading security and reliability standards.</p>
+                </div>
+                <div class="story-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-building"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="when-needed">
-        <h2>When You Need a Payment Gateway</h2>
-        <ul>
-            <li>When selling products or services online.</li>
-            <li>When accepting recurring subscription payments.</li>
-            <li>When receiving international payments securely.</li>
-        </ul>
+    <!-- Payment Process -->
+    <section class="payment-process">
+        <div class="container">
+            <h2>How Payment Gateway Works</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Customer Initiates Payment</h3>
+                    <p>Customer selects products/services and proceeds to checkout on merchant's website or app.</p>
+                </div>
+                <div class="process-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure Data Transmission</h3>
+                    <p>Payment details are encrypted and securely transmitted to PayDaily's payment gateway.</p>
+                </div>
+                <div class="process-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Bank Authorization</h3>
+                    <p>We forward the request to the customer's bank or payment provider for authorization.</p>
+                </div>
+                <div class="process-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Transaction Completion</h3>
+                    <p>Upon approval, funds are transferred and both merchant and customer receive confirmation.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Mission & Vision -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="mv-grid">
+                <div class="mv-card">
+                    <div class="mv-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To democratize digital payments by providing secure, reliable, and affordable payment solutions that enable businesses to grow and thrive in the digital economy.</p>
+                </div>
+                <div class="mv-card">
+                    <div class="mv-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To become India's most trusted payment gateway, known for innovation, security, and exceptional customer service, while contributing to a cashless society.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Company Values -->
+    <section class="company-values">
+        <div class="container">
+            <h2>Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Security First</h3>
+                    <p>We prioritize the security of every transaction with industry-leading encryption and compliance standards.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Customer Centric</h3>
+                    <p>Our customers' success is our success. We build solutions that truly serve their needs.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovation</h3>
+                    <p>We continuously innovate to stay ahead of market needs and technological advancements.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Reliability</h3>
+                    <p>We ensure 99.9% uptime and consistent performance that businesses can depend on.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Footer page code-->
-<footer>
-  <div class="footer-container">
-    
-    <div class="footer-column">
-      <h3>
-         <img src="images\PDi.jpeg" height="80" width="80">
-        About Us</h3>
-      <p1>We provide secure and reliable payment gateway and payout solutions for e-commerce, gaming, and business platforms.</p1>
-    </div>
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2>Leadership Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Rajesh Kumar</h3>
+                    <p class="member-role">CEO & Founder</p>
+                    <p>15+ years in fintech and payments industry</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Priya Sharma</h3>
+                    <p class="member-role">CTO</p>
+                    <p>Expert in payment systems and security architecture</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Amit Patel</h3>
+                    <p class="member-role">Head of Operations</p>
+                    <p>Specialist in scaling payment infrastructure</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="footer-column">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="about.html">About US</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
+    <!-- Certifications -->
+    <section class="certifications">
+        <div class="container">
+            <h2>Certifications & Compliance</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>PCI DSS Level 1</h3>
+                    <p>Highest level of payment card industry security compliance</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>ISO 27001</h3>
+                    <p>International standard for information security management</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>RBI Compliant</h3>
+                    <p>Fully compliant with Reserve Bank of India regulations</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>256-bit SSL</h3>
+                    <p>Bank-grade encryption for all data transmission</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="footer-column">
-      <h3>Contact Us</h3>
-      <ul>
-        <li>Email: support@PayDaily.in</li>
-        <li>Phone: +91 98765 43210</li>
-        <li>Address: 123 Business Street, Chennai, India</li>
-      </ul>
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-credit-card"></i>
+                    <span>PayDaily</span>
+                </div>
+                <p>Secure and reliable payment gateway solutions for businesses of all sizes.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="index.html#payin">PayIn API</a></li>
+                    <li><a href="index.html#payout">PayOut API</a></li>
+                    <li><a href="index.html#integration">Integration</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">API Reference</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Status Page</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> support@paydaily.com</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PayDaily. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
 
-    <div class="footer-column">
-      <h3>Follow Us</h3>
-      <div class="footer-social">
-        <ul>
-       <li> <a href="#"><i class="fab fa-facebook-f">facebook</i></a></li>
-       <li> <a href="#"><i class="fab fa-twitter">Twitter</i></a></li>
-        <li><a href="#"><i class="fab fa-linkedin-in">linkedin</i></a></li>
-       <li> <a href="#"><i class="fab fa-instagram">instagram</i></a></li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    &copy; 2025 YourCompanyName. All rights reserved.
-  </div>
-</footer>
+    <script src="script.js"></script>
 </body>
 </html>

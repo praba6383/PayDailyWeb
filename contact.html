@@ -1,246 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="images\PD.jpg">
-
-  <title>Contact</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
-    }
-
-    body {
-      background-color: #f4f4f4;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-      background: #fff;
-      margin-top: 50px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      text-align: center;
-      color: #333;
-      margin-bottom: 30px;
-    }
-
-    .contact-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    .contact-info, .contact-form {
-      flex: 1;
-      min-width: 300px;
-      margin: 20px;
-    }
-
-    .contact-info h3 {
-      margin-bottom: 10px;
-      color: #444;
-    }
-
-    .contact-info p {
-      margin-bottom: 8px;
-      color: #555;
-    }
-
-    form input, form textarea {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-
-    form button {
-      padding: 12px 25px;
-      background: #007BFF;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    form button:hover {
-      background: #0056b3;
-    }
-
-    @media (max-width: 768px) {
-      .contact-wrapper {
-        flex-direction: column;
-      }
-    }
-
-
-
-    /* footer page style*/
-
-     footer {
-      background-color: #222;
-      color: #f4f4f4;
-      padding: 40px 20px;
-    }
-
-    .footer-container {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    .footer-column {
-      flex: 1 1 250px;
-      margin: 20px 0;
-    }
-
-    .footer-column h3 {
-      color: #fff;
-      margin-bottom: 15px;
-      font-size: 18px;
-    }
-
-    .footer-column ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .footer-column ul li {
-      margin-bottom: 10px;
-    }
-
-    .footer-column ul li a {
-      color: #bbb;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    .footer-column ul li a:hover {
-      color: #fff;
-    }
-
-    .footer-social a {
-      display: inline-block;
-      margin-right: 15px;
-      color: #bbb;
-      font-size: 20px;
-      transition: color 0.3s;
-    }
-
-    .footer-social a:hover {
-      color: #fff;
-    }
-
-    .footer-bottom {
-      text-align: center;
-      padding-top: 20px;
-      border-top: 1px solid #444;
-      margin-top: 20px;
-      font-size: 14px;
-      color: #aaa;
-    }
-
-    @media screen and (max-width: 768px) {
-      .footer-container {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
-  
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PayDaily</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-credit-card"></i>
+                <span>PayDaily</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html#payin">PayIn API</a>
+                        <a href="index.html#payout">PayOut API</a>
+                        <a href="index.html#integration">Integration</a>
+                    </div>
+                </li>
+                <li><a href="index.html#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-  <div class="container">
-    <h1>Contact Us</h1>
-    <div class="contact-wrapper">
-      <!-- Contact Info -->
-      <div class="contact-info">
-        <h3>Get in touch</h3>
-        <p><strong>Company:</strong> PayDaily Solutions Pvt. Ltd.</p>
-        <p><strong>Email:</strong> support@PayDaily.com</p>
-        <p><strong>Phone:</strong> +91 98765 43210</p>
-        <p><strong>Address:</strong> 2nd Floor, Tech Park, Bangalore, cuddalore</p>
-        <p><strong>Support Hours:</strong> Mon - Sat, 9 AM - 6 PM</p>
-      </div>
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Have questions? We're here to help you get started with PayDaily</p>
+        </div>
+    </section>
 
-      <!-- Contact Form -->
-      <div class="contact-form">
-        <form action="#" method="post">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </div>
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="integration">Integration Support</option>
+                                <option value="pricing">Pricing Inquiry</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
 
- <!-- Footer page code-->
-<footer>
-  <div class="footer-container">
-    
-    <div class="footer-column">
-      <h3>
-         <img src="images\PDi.jpeg" height="80" width="80">
-        About Us</h3>
-      <p1>We provide secure and reliable payment gateway and payout solutions for e-commerce, gaming, and business platforms.</p1>
-    </div>
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2>Contact Information</h2>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email Us</h3>
+                            <p>support@paydaily.com</p>
+                            <p>sales@paydaily.com</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Call Us</h3>
+                            <p>+91 98765 43210</p>
+                            <p>Mon - Sat: 9 AM - 6 PM</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Visit Us</h3>
+                            <p>PayDaily Technologies Pvt. Ltd.</p>
+                            <p>123 Business District<br>Mumbai, Maharashtra 400001</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
 
-    <div class="footer-column">
-      <h3>Quick Links</h3>
-      <ul>
-         <li><a href="index.html">Home</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="about.html">About US</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
+                    <!-- Quick Links -->
+                    <div class="quick-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-book"></i> Documentation</a></li>
+                            <li><a href="#"><i class="fas fa-code"></i> API Reference</a></li>
+                            <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                            <li><a href="#"><i class="fas fa-life-ring"></i> Support Center</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="footer-column">
-      <h3>Contact Us</h3>
-      <ul>
-        <li>Email: support@yourdomain.com</li>
-        <li>Phone: +91 98765 43210</li>
-        <li>Address: 123 Business Street, Chennai, India</li>
-      </ul>
-    </div>
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does integration take?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most integrations can be completed within 2-3 business days. Our technical team provides full support throughout the process.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are the settlement timelines?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>UPI payments are settled instantly (T+0), while card payments are typically settled within T+1 to T+3 business days.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there a setup fee?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, there are no setup fees or monthly charges. You only pay for successful transactions based on our transparent pricing model.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What security measures do you have?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We are PCI DSS Level 1 compliant with 256-bit SSL encryption, fraud detection, and real-time monitoring for maximum security.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="footer-column">
-      <h3>Follow Us</h3>
-      <div class="footer-social">
-        <ul>
-       <li> <a href="#"><i class="fab fa-facebook-f">facebook</i></a></li>
-       <li> <a href="#"><i class="fab fa-twitter">Twitter</i></a></li>
-        <li><a href="#"><i class="fab fa-linkedin-in">linkedin</i></a></li>
-       <li> <a href="#"><i class="fab fa-instagram">instagram</i></a></li>
-        </ul>
-      </div>
-    </div>
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Find Us</h2>
+            <div class="map-placeholder">
+                <div class="map-content">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>PayDaily Office</h3>
+                    <p>123 Business District, Mumbai, Maharashtra 400001</p>
+                    <a href="#" class="btn btn-outline">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-credit-card"></i>
+                    <span>PayDaily</span>
+                </div>
+                <p>Secure and reliable payment gateway solutions for businesses of all sizes.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="index.html#payin">PayIn API</a></li>
+                    <li><a href="index.html#payout">PayOut API</a></li>
+                    <li><a href="index.html#integration">Integration</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">API Reference</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Status Page</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> support@paydaily.com</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PayDaily. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
 
-  <div class="footer-bottom">
-    &copy; 2025 YourCompanyName. All rights reserved.
-  </div>
-</footer>
-
-
-
+    <script src="script.js"></script>
 </body>
 </html>
